@@ -12,12 +12,14 @@ Here we will describe a simple configuration with 1 apache instance acting as a 
 
 ==Start the Jboss intances==
 Start a number of ami-4ea34727 images
+
 For each instance:
 
   # modify the JGroups configuration PING element to include initial_hosts
   # modify the AJP binding address
   # put the mysql connector in lib
   # put mysqlds.xml in deploy (you have to specify the mysql server address here)
+  # deploy smallface.ear
   # start jboss in the all configuration
 
 
