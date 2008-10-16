@@ -5,7 +5,7 @@ Here we will describe a simple configuration with 1 apache instance acting as a 
 ==Start the database==
 
   # create the jbossdb database
-  # modify the binding address
+  # modify the binding-address in /etc/mysql/my.cnf 
   # start MySql server
   # grant permissions to root to connect from EC2
 
