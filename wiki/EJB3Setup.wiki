@@ -1,0 +1,27 @@
+=How to set up the JBoss cluster on EC2=
+
+Here we will describe a simple configuration with 1 apache instance acting as a load balancer, multiple JBoss instances and one MySQL instance
+
+==Start the database==
+
+# create the jbossdb database
+# modify the binding address
+# start MySql server
+# grant permissions to root to connect from EC2
+
+
+==Start the Jboss intances==
+Start a number of ami-4ea34727 images
+For each instance:
+
+# modify the JGroups configuration PING element to include initial_hosts
+# modify the AJP binding address
+# put the mysql connector in lib
+# put mysqlds.xml in deploy (you have to specify the mysql server address here)
+# start jboss in the all configuration
+
+
+==Start the Apache load balancer==
+
+# start one ami-4ea34727 image and log into it
+# modify workers.properties to include a worker for each jboss instance
