@@ -1,4 +1,4 @@
-#summary How to deploy the EJB3 implementation
+#summary How to deploy the EJB3 implementation on the cloud
 
 =How to set up the JBoss cluster on EC2=
 
