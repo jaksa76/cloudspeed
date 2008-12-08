@@ -1,6 +1,6 @@
 #summary List of implementations
 
-= Implementations Introduction =
+= Implementations =
 
 There are several implementations of the Smallface application:
 
