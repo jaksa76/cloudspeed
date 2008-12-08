@@ -1,3 +1,5 @@
+#summary How to deploy the EJB3 implementation
+
 =How to set up the JBoss cluster on EC2=
 
 Here we will describe a simple configuration with 1 apache instance acting as a load balancer, multiple JBoss instances and one MySQL instance
