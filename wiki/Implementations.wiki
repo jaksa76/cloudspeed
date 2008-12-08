@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary List of implementations
 
 = Implementations Introduction =
 
@@ -8,3 +8,4 @@ There are several implementations of the Smallface application:
   * Pojo - Servlets and in memory java objects (no persistence)
   * Ramaze - Ruby and the Ramaze framework
   * ASP - ASPs written in VB and stored procedures for MS SQLServer
+  * Python - Django Python implementation
