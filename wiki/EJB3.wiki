@@ -1,0 +1,4 @@
+#summary the EJB3 implementation of Smallface
+
+The EJB 3 implementation uses Servlets and JPA.
+The ear file is available for [http://cloudspeed.googlecode.com/files/smallface.ear download] and you can find the source code [http://code.google.com/p/cloudspeed/source/browse/#svn/trunk/smallface/ejb3 here].
