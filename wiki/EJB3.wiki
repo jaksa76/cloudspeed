@@ -3,11 +3,11 @@
 The EJB 3 implementation uses Servlets and JPA.
 The ear file is available for [http://cloudspeed.googlecode.com/files/smallface.ear download] and you can find the source code [http://code.google.com/p/cloudspeed/source/browse/#svn/trunk/smallface/ejb3 here].
 
-=How to set up the JBoss cluster on EC2=
+==How to set up the JBoss cluster on EC2==
 
 Here we will describe a simple configuration with 1 apache instance acting as a load balancer, multiple JBoss instances and one MySQL instance
 
-==Start the database==
+===Start the database===
 
   # create the jbossdb database
   # modify the binding-address in /etc/mysql/my.cnf 
@@ -15,7 +15,7 @@ Here we will describe a simple configuration with 1 apache instance acting as a 
   # grant permissions to root to connect from EC2
 
 
-==Start the Jboss intances==
+===Start the Jboss intances===
 Start a number of ami-4ea34727 images
 
 For each instance:
@@ -28,7 +28,7 @@ For each instance:
   # start jboss in the all configuration
 
 
-==Start the Apache load balancer==
+===Start the Apache load balancer===
 
   # start one ami-4ea34727 image and log into it
   # modify workers.properties to include a worker for each jboss instance
