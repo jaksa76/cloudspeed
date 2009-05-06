@@ -2,7 +2,7 @@
 
 = Implementations =
 
-There are several implementations of the Smallface application:
+There are several implementations of the Smallface application which you can find in the source folder:
 
   * [EJB3] - Servlets and EJBs version 3
   * Pojo - Servlets and in memory java objects (no persistence)
