@@ -9,3 +9,4 @@ Resources:
       RoleArn: "arn:aws:iam::870594606895:role/phud-eks"
       ResourcesVpcConfig:
         SecurityGroupIds: ["sg-0b2ba41d84f2e6ca7"]
+        SubnetIds: ["subnet-142a4f63", "subnet-31c77868", "subnet-450c7120"]
