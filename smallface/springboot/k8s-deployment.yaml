@@ -15,7 +15,7 @@ spec:
         run: phud
     spec:
       containers:
-      - image: 870594606895.dkr.ecr.eu-west-1.amazonaws.com/phud:7254c03
+      - image: 870594606895.dkr.ecr.eu-west-1.amazonaws.com/phud:latest
         imagePullPolicy: IfNotPresent
         name: phud
         ports:
