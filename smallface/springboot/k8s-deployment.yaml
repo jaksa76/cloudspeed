@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: phud
+  name: phud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: phud
+  template:
+    metadata:
+      labels:
+        run: phud
+    spec:
+      containers:
+      - image: 870594606895.dkr.ecr.eu-west-1.amazonaws.com/phud:7254c03
+        imagePullPolicy: IfNotPresent
+        name: phud
+        ports:
+          - containerPort: 5000
