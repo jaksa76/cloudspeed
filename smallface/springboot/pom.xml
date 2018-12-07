@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zuhlke.smallface</groupId>
-    <artifactId>springboot</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <artifactId>smallface</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
