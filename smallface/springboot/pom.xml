@@ -59,6 +59,7 @@
 
 
     <build>
+        <finalName>smallface</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
