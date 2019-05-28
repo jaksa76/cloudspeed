@@ -9,11 +9,12 @@ variable "server_port" {
 
 variable "key_pair_name" {
   description = "The EC2 Key Pair to associate with the EC2 Instance for SSH access."
-  default = "my-keypair"
+  default = "cloudspeed1"
 }
 
 variable "key_pair" {
-  description = "The keypair to use to authenticate clients SSH-ing into the EC2 instances"
+  default = "C:\\cloudspeed1.pem"
+  description = "The EC2 Key Pair to associate with the EC2 Instance for SSH access."
 }
 
 variable "db_user" {
@@ -22,11 +23,11 @@ variable "db_user" {
 }
 
 variable "db_password" {
-  description = "Choose the database password"
+  description = "smallface"
 }
 
 resource "aws_security_group" "smallface-sg" {
-  name = "smallface-security-group"
+  name = "smallface-security-group2"
 
   ingress {
     from_port = "${var.server_port}"
@@ -79,7 +80,7 @@ resource "aws_instance" "server" {
     user = "ec2-user"
     port = 22
     private_key = "${file(var.key_pair)}"
-    timeout = "1m"
+    timeout = "10m"
     agent = false
   }
 

@@ -46,14 +46,14 @@ public class SmallfaceService {
     }
 
     public List<String> getAllFriendsPosts(String userEmail) {
-        return users.findById(userEmail).map(user ->
-                user.getFriends().stream()
-                .flatMap(friend -> friend.getPosts().stream())
-                .sorted(comparing(Post::getDate))
-                .map(Post::getContent)
-                .limit(10)
-                .collect(toList())
-        ).orElseThrow(userNotFound(userEmail));
+        return users.findById(userEmail)
+                .map(user -> user.getFriends().stream()
+                        .flatMap(friend -> friend.getPosts().stream())
+                        .sorted(comparing(Post::getDate))
+                        .map(Post::getContent)
+                        .limit(10)
+                        .collect(toList())
+                ).orElseThrow(userNotFound(userEmail));
     }
 
     public boolean authenticate(String email, String password) {
